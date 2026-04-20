@@ -7,7 +7,7 @@ export function About() {
           <h2 className="heading-lime text-[28px] sm:text-[36px] max-w-md">
             Movement without meaning is just noise.
           </h2>
-          <p className="font-body text-[15px] text-lime/65 max-w-md leading-relaxed">
+          <p className="font-brand text-[15px] text-lime/65 max-w-md leading-relaxed">
             Studio CASA is a brand strategy and creative direction studio operating between Brazil and UAE.
             We believe every brand deserves a clear point of view before it moves.
           </p>
@@ -19,7 +19,7 @@ export function About() {
         </div>
 
         <div className="reveal relative">
-          <div className="bg-cream rounded-[20px] aspect-square flex items-center justify-center relative overflow-hidden">
+          <div className="bg-beige rounded-[20px] aspect-square flex items-center justify-center relative overflow-hidden">
             <div className="grid grid-cols-2 gap-2 sm:gap-3">
               {[0, 1, 2, 3].map((i) => (
                 <div key={i} className="w-20 h-20 sm:w-28 sm:h-28 bg-ink rounded-[6px]" />

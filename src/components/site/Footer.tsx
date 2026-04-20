@@ -8,8 +8,8 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-10 md:gap-6 items-start">
           <div className="flex flex-col gap-2">
-            <span className="font-display font-extrabold text-[22px] text-lime">studio casa</span>
-            <span className="font-body text-[13px] text-olive">meaning before motion</span>
+            <span className="font-brand font-extrabold text-[22px] text-lime">studio casa</span>
+            <span className="font-brand text-[13px] text-muted">meaning before motion</span>
           </div>
 
           <ul className="flex flex-wrap md:justify-center gap-x-6 gap-y-2">
@@ -32,7 +32,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-olive/20 mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-3 font-mono text-[11px] tracking-[0.12em] uppercase text-olive">
+        <div className="border-t border-olive/20 mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-3 font-mono text-[11px] tracking-[0.12em] uppercase text-muted">
           <span>© 2025 Studio CASA</span>
           <span>All rights reserved</span>
         </div>

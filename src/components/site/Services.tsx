@@ -42,7 +42,7 @@ const services: Service[] = [
 
 export function Services() {
   return (
-    <section className="bg-bone px-6 py-24 sm:py-32">
+    <section className="bg-beige px-6 py-24 sm:py-32">
       <div className="max-w-6xl mx-auto">
         <div className="reveal flex flex-col gap-5 mb-14 max-w-2xl">
           <span className="eyebrow">02 — What We Do</span>
@@ -53,8 +53,8 @@ export function Services() {
           {services.map((s, i) => (
             <article key={s.title} className="card-light reveal flex flex-col gap-5" style={{ transitionDelay: `${i * 60}ms` }}>
               <span className={`icon-circle ${s.iconClass}`}>{s.icon}</span>
-              <h3 className="font-display font-bold text-[22px] text-ink leading-tight">{s.title}</h3>
-              <p className="font-body text-[14px] text-olive leading-relaxed">{s.body}</p>
+              <h3 className="font-brand font-bold text-[22px] text-ink leading-tight">{s.title}</h3>
+              <p className="font-brand text-[14px] text-muted leading-relaxed">{s.body}</p>
               <div className="flex flex-wrap gap-2 mt-auto pt-2">
                 {s.tags.map((t) => <span key={t} className="pill">{t}</span>)}
               </div>

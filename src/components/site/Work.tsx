@@ -43,8 +43,8 @@ export function Work() {
                 <span className="font-mono text-[11px] text-lime/55 tracking-[0.14em] uppercase">Project {p.n}</span>
                 <span className="pill pill-tomato !text-[11px] !py-1 !px-3">{p.tag}</span>
               </div>
-              <h3 className="font-display font-bold text-[22px] text-lime leading-tight mt-2">{p.title}</h3>
-              <p className="font-body text-[13px] text-lime/65 leading-relaxed">{p.body}</p>
+              <h3 className="font-brand font-bold text-[22px] text-lime leading-tight mt-2">{p.title}</h3>
+              <p className="font-brand text-[13px] text-lime/65 leading-relaxed">{p.body}</p>
               <div className="mt-auto pt-4 flex items-center justify-between border-t border-lime/15 font-mono text-[11px] text-lime/55 tracking-[0.12em] uppercase">
                 <span>{p.year}</span>
                 <span>{p.cat}</span>

@@ -6,9 +6,9 @@ export function Cta() {
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center gap-8">
         <div className="reveal flex items-center justify-center gap-2 flex-wrap">
           <span className="pill">meaning</span>
-          <Asterisk size={14} className="text-olive" />
+          <Asterisk size={14} className="text-muted" />
           <span className="pill">before</span>
-          <Asterisk size={14} className="text-olive" />
+          <Asterisk size={14} className="text-muted" />
           <span className="pill">motion</span>
         </div>
 
@@ -16,7 +16,7 @@ export function Cta() {
           Ready to build something meaningful?
         </h2>
 
-        <p className="reveal font-body text-[16px] text-olive max-w-md">
+        <p className="reveal font-brand text-[16px] text-muted max-w-md">
           Let's talk about your brand. No noise — just strategy.
         </p>
 
