@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { useReveal } from './hooks/use-reveal'
 import { Nav } from './components/site/Nav'
 import { Hero } from './components/site/Hero'
 import { About } from './components/site/About'
@@ -10,6 +11,7 @@ import { Cta } from './components/site/Cta'
 import { Footer } from './components/site/Footer'
 
 function HomePage() {
+  useReveal()
   return (
     <>
       <Nav />
