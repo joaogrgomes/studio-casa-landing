@@ -1,26 +1,49 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Services } from "@/components/site/Services";
+import { Work } from "@/components/site/Work";
+import { Process } from "@/components/site/Process";
+import { Clients } from "@/components/site/Clients";
+import { Cta } from "@/components/site/Cta";
+import { Footer } from "@/components/site/Footer";
+import { useReveal } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Studio CASA — Meaning before motion" },
+      {
+        name: "description",
+        content:
+          "Studio CASA is a brand strategy, creative direction and content studio operating between Brazil and UAE. We help brands move with clarity, strategy and purpose.",
+      },
+      { property: "og:title", content: "Studio CASA — Meaning before motion" },
+      {
+        property: "og:description",
+        content:
+          "Brand strategy, creative direction & content. Movement without meaning is just noise.",
+      },
+      { property: "og:type", content: "website" },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  useReveal();
+  return (
+    <main className="bg-bone text-ink min-h-screen">
+      <Nav />
+      <Hero />
+      <About />
+      <Services />
+      <Work />
+      <Process />
+      <Clients />
+      <Cta />
+      <Footer />
+    </main>
+  );
 }
