@@ -24,7 +24,7 @@ export function Cta() {
           Hire us <ArrowRight size={18} />
         </a>
 
-        <p className="reveal font-mono text-[11px] tracking-[0.16em] uppercase text-stone mt-2">
+        <p className="reveal font-mono text-[11px] tracking-[0.16em] uppercase text-muted mt-2">
           Operating from Brazil &amp; UAE · studiocasa.com
         </p>
       </div>

@@ -19,7 +19,7 @@ export function Process() {
             <div key={s.n} className="reveal flex flex-col gap-4 relative" style={{ transitionDelay: `${i * 80}ms` }}>
               <span className="font-mono text-[11px] text-muted tracking-[0.16em]">{s.n}</span>
               <span className="pill self-start">{s.label}</span>
-              <p className="font-brand text-[14px] text-muted leading-relaxed max-w-[240px]">{s.body}</p>
+              <p className="font-brand text-[16px] text-muted leading-relaxed max-w-[320px]">{s.body}</p>
             </div>
           ))}
         </div>

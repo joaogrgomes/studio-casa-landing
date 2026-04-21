@@ -21,7 +21,7 @@
   --color-tomato:      #DD4B2C;
   --color-tomato-dark: #C23E22;
   --color-ink:         #1A1F1C;
-  --color-muted:       #5A6B5E;
+  --color-muted:       #596A5D;
   --color-stone:       #8A9488;
   --color-border:      rgba(42, 51, 47, 0.12);
 
@@ -70,7 +70,7 @@
     transition: transform var(--dur-base) var(--ease-spring), background var(--dur-base) var(--ease-out);
     white-space: nowrap;
   }
-  .pill-tomato { background: var(--color-tomato); border-color: var(--color-tomato); color: var(--color-beige); }
+  .pill-tomato { background: var(--color-tomato); border-color: var(--color-tomato); color: #ffffff; }
   .pill-lime   { background: var(--color-lime);   border-color: var(--color-lime);   color: var(--color-ink); }
   .pill-forest { background: var(--color-forest); border-color: var(--color-forest); color: var(--color-lime); }
   .pill:hover  { transform: scale(1.04); }
@@ -92,7 +92,7 @@
     border: 1.5px solid transparent;
   }
   .btn:hover          { transform: scale(1.03); }
-  .btn-primary        { background: var(--color-tomato); color: var(--color-beige); }
+  .btn-primary        { background: var(--color-tomato); color: #ffffff; }
   .btn-primary:hover  { background: var(--color-tomato-dark); }
   .btn-secondary      { background: transparent; color: var(--color-ink); border-color: var(--color-ink); }
   .btn-secondary:hover{ background: var(--color-ink); color: var(--color-beige); }

@@ -4,7 +4,7 @@ export function About() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="reveal flex flex-col gap-6">
           <span className="eyebrow !text-lime/60">01 — Who We Are</span>
-          <h2 className="heading-lime text-[28px] sm:text-[36px] max-w-md">
+          <h2 className="heading-lime text-[clamp(30px,3vw,36px)] max-w-md">
             Movement without meaning is just noise.
           </h2>
           <p className="font-brand text-[15px] text-lime/65 max-w-md leading-relaxed">

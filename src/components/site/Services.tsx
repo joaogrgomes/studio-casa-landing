@@ -54,7 +54,7 @@ export function Services() {
             <article key={s.title} className="card-light reveal flex flex-col gap-5" style={{ transitionDelay: `${i * 60}ms` }}>
               <span className={`icon-circle ${s.iconClass}`}>{s.icon}</span>
               <h3 className="font-brand font-bold text-[22px] text-ink leading-tight">{s.title}</h3>
-              <p className="font-brand text-[14px] text-muted leading-relaxed">{s.body}</p>
+              <p className="font-brand text-[16px] text-muted leading-relaxed">{s.body}</p>
               <div className="flex flex-wrap gap-2 mt-auto pt-2">
                 {s.tags.map((t) => <span key={t} className="pill">{t}</span>)}
               </div>

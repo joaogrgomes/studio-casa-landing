@@ -40,12 +40,12 @@ export function Work() {
           {projects.map((p, i) => (
             <article key={p.n} className="card-dark reveal flex flex-col gap-5 min-h-[280px]" style={{ transitionDelay: `${i * 80}ms` }}>
               <div className="flex items-start justify-between gap-3">
-                <span className="font-mono text-[11px] text-lime/55 tracking-[0.14em] uppercase">Project {p.n}</span>
-                <span className="pill pill-tomato !text-[11px] !py-1 !px-3">{p.tag}</span>
+                <span className="font-mono text-[11px] text-lime tracking-[0.14em] uppercase">Project {p.n}</span>
+                <span className="pill pill-forest !text-[11px] !py-1 !px-3">{p.tag}</span>
               </div>
               <h3 className="font-brand font-bold text-[22px] text-lime leading-tight mt-2">{p.title}</h3>
-              <p className="font-brand text-[13px] text-lime/65 leading-relaxed">{p.body}</p>
-              <div className="mt-auto pt-4 flex items-center justify-between border-t border-lime/15 font-mono text-[11px] text-lime/55 tracking-[0.12em] uppercase">
+              <p className="font-brand text-[15px] text-lime/65 leading-relaxed">{p.body}</p>
+              <div className="mt-auto pt-4 flex items-center justify-between border-t border-lime/15 font-mono text-[11px] text-lime tracking-[0.12em] uppercase">
                 <span>{p.year}</span>
                 <span>{p.cat}</span>
               </div>

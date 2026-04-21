@@ -10,7 +10,7 @@ export function Clients() {
 
         <div className="reveal flex flex-wrap items-center justify-between gap-x-8 gap-y-5 border-y border-stone/40 py-7">
           {logos.map((l) => (
-            <span key={l} className="font-mono text-[13px] tracking-[0.18em] text-muted/50">{l}</span>
+            <span key={l} className="font-mono text-[13px] tracking-[0.18em] text-muted">{l}</span>
           ))}
         </div>
 
