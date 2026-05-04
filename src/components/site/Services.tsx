@@ -35,7 +35,7 @@ const services: Service[] = [
     icon: <Square size={18} strokeWidth={2.25} />,
     iconClass: "icon-forest",
     title: "Brand Overhaul",
-    body: "Full rebrands for brands ready to evolve. Strategy, identity, and rollout — all in one house.",
+    body: "Full rebrands for brands ready to evolve. We go beyond the logo to build a complete brand ecosystem — visual language, tone of voice, and market positioning.",
     tags: ["rebrand", "identity", "launch"],
   },
 ];

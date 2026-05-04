@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 export function About() {
   return (
     <section id="expertise" className="bg-forest text-lime px-6 py-24 sm:py-32">
@@ -9,7 +11,7 @@ export function About() {
           </h2>
           <p className="font-brand text-[15px] text-lime/65 max-w-md leading-relaxed">
             Studio CASA is a brand strategy and creative direction studio operating between Brazil and UAE.
-            We believe every brand deserves a clear point of view before it moves.
+            With over a decade of expertise built in the Brazilian market, we believe every brand deserves a clear point of view before it moves.
           </p>
           <div className="flex flex-wrap gap-2 mt-2">
             <span className="pill pill-forest">brand strategy</span>
@@ -31,6 +33,13 @@ export function About() {
           </div>
         </div>
       </div>
+
+      <div className="flex justify-center mt-12 reveal">
+          <a href="#" className="btn btn-ghost">
+            More about us <ArrowRight size={16} />
+          </a>
+        </div>
+
     </section>
   );
 }

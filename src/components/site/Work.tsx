@@ -3,27 +3,30 @@ import { ArrowRight } from "lucide-react";
 const projects = [
   {
     n: "01",
+    client: "FURSAN",
     tag: "Content Strategy",
-    title: "It's not just about content.",
+    title: "Building the Future of Combat.",
     body: "A long-form content system designed to give the brand a real point of view — not just posts.",
     year: "2024",
-    cat: "Content",
+    cat: "CONTENT",
   },
   {
     n: "02",
+    client: "UAE WARRIORS",
     tag: "Brand Overhaul",
-    title: "A new voice for an old brand.",
-    body: "Repositioning a legacy name for a new generation, without losing the equity built over decades.",
+    title: "A new voice for a legacy brand.",
+    body: "Repositioning a combat sports brand for a new generation, without losing the authority built over years.",
     year: "2024",
-    cat: "Rebrand",
+    cat: "REBRAND",
   },
   {
     n: "03",
+    client: "TERRA VERDE",
     tag: "Brand Strategy",
     title: "Clarity before the launch.",
-    body: "Foundational strategy for a category-defining product — built before a single asset was designed.",
+    body: "Foundational strategy for a category-defining agribusiness product — built before a single asset was designed.",
     year: "2023",
-    cat: "Strategy",
+    cat: "STRATEGY",
   },
 ];
 
@@ -40,7 +43,7 @@ export function Work() {
           {projects.map((p, i) => (
             <article key={p.n} className="card-dark reveal flex flex-col gap-5 min-h-[280px]" style={{ transitionDelay: `${i * 80}ms` }}>
               <div className="flex items-start justify-between gap-3">
-                <span className="font-mono text-[11px] text-lime tracking-[0.14em] uppercase">Project {p.n}</span>
+                <span className="font-mono text-[11px] text-lime tracking-[0.14em] uppercase">{p.client}</span>
                 <span className="pill pill-forest !text-[11px] !py-1 !px-3">{p.tag}</span>
               </div>
               <h3 className="font-brand font-bold text-[22px] text-lime leading-tight mt-2">{p.title}</h3>

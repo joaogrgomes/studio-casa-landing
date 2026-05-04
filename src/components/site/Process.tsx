@@ -2,7 +2,7 @@ const steps = [
   { n: "01", label: "Decode", body: "We research the brand, the market, and the audience. No assumptions." },
   { n: "02", label: "Define", body: "We establish the strategic foundation: positioning, voice, and direction." },
   { n: "03", label: "Direct", body: "We lead the creative execution with intention at every touchpoint." },
-  { n: "04", label: "Deliver", body: "We roll out and support the brand as it moves into the world." },
+  { n: "04", label: "Deliver", body: "We roll out and support the brand as it moves into the world — from production to distribution." },
 ];
 
 export function Process() {

@@ -27,19 +27,22 @@ export function Footer() {
             ))}
           </ul>
 
-          <div className="flex md:justify-end items-center gap-3">
-            <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full border border-lime/30 flex items-center justify-center text-lime hover:bg-lime hover:text-forest transition-colors">
-              <Instagram size={16} />
-            </a>
-            <a href="#" aria-label="LinkedIn" className="w-10 h-10 rounded-full border border-lime/30 flex items-center justify-center text-lime hover:bg-lime hover:text-forest transition-colors">
-              <Linkedin size={16} />
-            </a>
+          <div className="flex flex-col md:items-end gap-3">
+            <span className="font-brand text-[13px] text-lime/70">Operating from Brazil &amp; UAE</span>
+            <a href="mailto:create@casastudioae.com" className="font-brand text-[13px] text-lime/70 hover:text-lime transition-colors">create@casastudioae.com</a>
+            <div className="flex items-center gap-3">
+              <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full border border-lime/30 flex items-center justify-center text-lime hover:bg-lime hover:text-forest transition-colors">
+                <Instagram size={16} />
+              </a>
+              <a href="#" aria-label="LinkedIn" className="w-10 h-10 rounded-full border border-lime/30 flex items-center justify-center text-lime hover:bg-lime hover:text-forest transition-colors">
+                <Linkedin size={16} />
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="border-t border-lime/20 mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-3 font-mono text-[11px] tracking-[0.12em] uppercase text-lime/70">
-          <span>© 2025 Studio CASA</span>
-          <span>All rights reserved</span>
+          <span>© 2026 STUDIO CASA · ALL RIGHTS RESERVED</span>
         </div>
       </div>
     </footer>
