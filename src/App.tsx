@@ -12,6 +12,7 @@ import { Cta } from './components/site/Cta'
 import { Footer } from './components/site/Footer'
 
 const ProjectsPage = lazy(() => import('./routes/ProjectsPage'))
+const AboutPage    = lazy(() => import('./routes/AboutPage'))
 
 function HomePage() {
   useReveal()
@@ -37,6 +38,11 @@ export default function App() {
       <Route path="/projects" element={
         <Suspense fallback={null}>
           <ProjectsPage />
+        </Suspense>
+      } />
+      <Route path="/about" element={
+        <Suspense fallback={null}>
+          <AboutPage />
         </Suspense>
       } />
     </Routes>
