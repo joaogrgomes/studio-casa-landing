@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const links = ["Home", "Expertise", "Projects", "People", "Contact"];
 
@@ -16,12 +17,18 @@ export function Nav() {
         <ul className="hidden md:flex items-center gap-5 mx-auto">
           {links.map((l) => (
             <li key={l}>
-              <a
-                href={`#${l.toLowerCase()}`}
-                className="font-brand text-[13px] text-muted hover:text-ink transition-colors"
-              >
-                {l}
-              </a>
+              {l === "Projects" ? (
+                <Link to="/projects" className="font-brand text-[13px] text-muted hover:text-ink transition-colors">
+                  {l}
+                </Link>
+              ) : (
+                <a
+                  href={`#${l.toLowerCase()}`}
+                  className="font-brand text-[13px] text-muted hover:text-ink transition-colors"
+                >
+                  {l}
+                </a>
+              )}
             </li>
           ))}
         </ul>

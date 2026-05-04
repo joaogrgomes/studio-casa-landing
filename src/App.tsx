@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { useReveal } from './hooks/use-reveal'
 import { Nav } from './components/site/Nav'
@@ -9,6 +10,8 @@ import { Process } from './components/site/Process'
 import { Clients } from './components/site/Clients'
 import { Cta } from './components/site/Cta'
 import { Footer } from './components/site/Footer'
+
+const ProjectsPage = lazy(() => import('./routes/ProjectsPage'))
 
 function HomePage() {
   useReveal()
@@ -31,6 +34,11 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/projects" element={
+        <Suspense fallback={null}>
+          <ProjectsPage />
+        </Suspense>
+      } />
     </Routes>
   )
 }

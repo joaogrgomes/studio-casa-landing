@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -57,9 +58,9 @@ export function Work() {
         </div>
 
         <div className="flex justify-center mt-12 reveal">
-          <a href="#" className="btn btn-ghost">
+          <Link to="/projects" className="btn btn-ghost">
             See all projects <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
