@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 
 const navLinks = [
   { label: "Home", to: "/" },
-  { label: "Services", to: "/#services" },
   { label: "Projects", to: "/projects" },
   { label: "About", to: "/about" },
-  { label: "Contact", to: "/#contact" },
 ];
 
 export function Nav() {
@@ -45,9 +43,9 @@ export function Nav() {
           {isMobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
         </button>
 
-        <Link to="/#contact" className="hidden md:inline-flex btn btn-primary !py-2 !px-4 ml-auto md:ml-0 text-[13px]">
+        <a href="mailto:create@casastudioae.com" className="hidden md:inline-flex btn btn-primary !py-2 !px-4 ml-auto md:ml-0 text-[13px]">
           Start a Project <ArrowUpRight size={14} strokeWidth={2.25} />
-        </Link>
+        </a>
 
         {isMobileMenuOpen && (
           <div className="md:hidden absolute left-0 right-0 top-[calc(100%+10px)] bg-beige border border-ink/10 rounded-[20px] shadow-lg p-4">
