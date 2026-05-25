@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function About() {
   return (
@@ -10,13 +11,15 @@ export function About() {
             Movement without meaning is just noise.
           </h2>
           <p className="font-brand text-[15px] text-lime/65 max-w-md leading-relaxed">
-            Studio CASA is a brand strategy and creative direction studio operating between Brazil and UAE.
-            With over a decade of expertise built in the Brazilian market, we believe every brand deserves a clear point of view before it moves.
+            Casa Studio brings together strategic thinking, narrative craft and cinematic production to create content with purpose. Rooted in Brazilian creative heritage and based in Dubai, we build tailored solutions for brands, events and talents across the UAE market.
+          </p>
+          <p className="font-brand text-[15px] text-lime/65 max-w-md leading-relaxed">
+            From brand identity to campaign films, every project starts with understanding the client&apos;s vision before turning it into a visual story.
           </p>
           <div className="flex flex-wrap gap-2 mt-2">
-            <span className="pill pill-forest">brand strategy</span>
-            <span className="pill pill-forest">creative direction</span>
-            <span className="pill pill-forest">content</span>
+            <span className="pill pill-forest">strategy</span>
+            <span className="pill pill-forest">storytelling</span>
+            <span className="pill pill-forest">cinematic production</span>
           </div>
         </div>
 
@@ -35,9 +38,9 @@ export function About() {
       </div>
 
       <div className="flex justify-center mt-12 reveal">
-          <a href="#" className="btn btn-ghost">
+          <Link to="/about" className="btn btn-ghost">
             More about us <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
 
     </section>

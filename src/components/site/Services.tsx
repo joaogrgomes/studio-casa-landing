@@ -1,4 +1,4 @@
-import { Home, ArrowUpRight, Asterisk, Square } from "lucide-react";
+import { Home, ArrowUpRight, Asterisk, Square, Film, Clapperboard } from "lucide-react";
 import type { ReactNode } from "react";
 
 type Service = {
@@ -13,36 +13,50 @@ const services: Service[] = [
   {
     icon: <Home size={18} strokeWidth={2.25} />,
     iconClass: "icon-tomato",
-    title: "Brand Strategy",
-    body: "We define the foundation your brand stands on — positioning, voice, values, and competitive clarity.",
-    tags: ["positioning", "voice", "research"],
+    title: "Brand Films",
+    body: "Scripted and documentary-style films that translate brand positioning into cinematic narratives.",
+    tags: ["concept", "script", "cinematic production"],
   },
   {
     icon: <ArrowUpRight size={20} strokeWidth={2.25} />,
     iconClass: "icon-lime",
-    title: "Creative Direction",
-    body: "We lead the visual and conceptual development of campaigns, identities, and brand moments.",
-    tags: ["visual identity", "campaigns", "art direction"],
+    title: "Event Content",
+    body: "Promotional assets, highlights and backstage storytelling built for events and live experiences.",
+    tags: ["event promo", "highlights", "behind the scenes"],
   },
   {
-    icon: <Asterisk size={20} strokeWidth={2.25} />,
+    icon: <Film size={18} strokeWidth={2.25} />,
     iconClass: "icon-cream",
-    title: "Content & Production",
-    body: "From social to editorial, we create content that communicates with intention — not just volume.",
-    tags: ["social", "editorial", "video"],
+    title: "Lifestyle Campaigns",
+    body: "Campaign production that blends narrative direction, premium visuals and market relevance.",
+    tags: ["campaign film", "lookbook", "teasers"],
   },
   {
     icon: <Square size={18} strokeWidth={2.25} />,
     iconClass: "icon-forest",
-    title: "Brand Overhaul",
-    body: "Full rebrands for brands ready to evolve. We go beyond the logo to build a complete brand ecosystem — visual language, tone of voice, and market positioning.",
-    tags: ["rebrand", "identity", "launch"],
+    title: "Creative Direction",
+    body: "Visual and conceptual leadership from pre-production through final delivery.",
+    tags: ["art direction", "visual language", "production oversight"],
+  },
+  {
+    icon: <Asterisk size={20} strokeWidth={2.25} />,
+    iconClass: "icon-tomato",
+    title: "Storytelling & Script Development",
+    body: "Narrative frameworks, scripts and voiceovers crafted to create emotional connection and clarity.",
+    tags: ["narrative strategy", "scriptwriting", "voiceover"],
+  },
+  {
+    icon: <Clapperboard size={18} strokeWidth={2.25} />,
+    iconClass: "icon-lime",
+    title: "Social Media Content",
+    body: "Short and mid-form content systems designed for consistency, pace and audience engagement.",
+    tags: ["social content", "editing", "distribution-ready assets"],
   },
 ];
 
 export function Services() {
   return (
-    <section className="bg-beige px-6 py-24 sm:py-32">
+    <section id="services" className="bg-beige px-6 py-24 sm:py-32">
       <div className="max-w-6xl mx-auto">
         <div className="reveal flex flex-col gap-5 mb-14 max-w-2xl">
           <span className="eyebrow">02 — What We Do</span>

@@ -17,20 +17,22 @@ export function Hero() {
         </div>
 
         <h1 className="display display-hero anim-fade-up anim-delay-3">
-          We help brands move<br />
-          with clarity, strategy<br />
-          and purpose.
+          Strategy, storytelling and
+          <br />
+          cinematic production
+          <br />
+          from Dubai.
         </h1>
 
-        <p className="font-brand text-[16px] text-muted leading-relaxed max-w-[480px] anim-fade-up anim-delay-4">
-          At CASA, every delivery begins with insight, intention, and a clear understanding of what the brand truly needs.
+        <p className="font-brand text-[16px] text-muted leading-relaxed max-w-[680px] anim-fade-up anim-delay-4">
+          Casa Studio helps brands, events and talents turn ideas into visual narratives that move people — blending Brazilian creative heritage with the ambition of the UAE market.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 anim-fade-up anim-delay-5">
           <a href="#contact" className="btn btn-primary">
-            Hire us <ArrowRight size={16} />
+            Start a Project <ArrowRight size={16} />
           </a>
-          <a href="#projects" className="btn btn-secondary">See our work</a>
+          <a href="#projects" className="btn btn-secondary">View Projects</a>
         </div>
       </div>
 

@@ -13,19 +13,19 @@ export function Cta() {
         </div>
 
         <h2 className="reveal display display-md max-w-3xl">
-          Ready to build something meaningful?
+          Ready to build something that lasts?
         </h2>
 
         <p className="reveal font-brand text-[16px] text-muted max-w-md">
-          Let's talk about your brand. No noise — just strategy.
+          Let's create with intention.
         </p>
 
-        <a href="mailto:hello@studiocasa.com" className="reveal btn btn-primary btn-lg">
-          Hire us <ArrowRight size={18} />
+        <a href="mailto:create@casastudioae.com" className="reveal btn btn-primary btn-lg">
+          Start a Project <ArrowRight size={18} />
         </a>
 
         <p className="reveal font-mono text-[11px] tracking-[0.16em] uppercase text-muted mt-2">
-          Operating from Brazil &amp; UAE · studiocasa.com
+          Dubai, UAE · (+971) 58 176 9204
         </p>
       </div>
     </section>
