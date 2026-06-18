@@ -13,6 +13,7 @@ import { Footer } from './components/site/Footer'
 
 const ProjectsPage = lazy(() => import('./routes/ProjectsPage'))
 const AboutPage    = lazy(() => import('./routes/AboutPage'))
+const ProjectDetailPage = lazy(() => import('./routes/ProjectDetailPage'))
 
 function HomePage() {
   useReveal()
@@ -38,6 +39,11 @@ export default function App() {
       <Route path="/projects" element={
         <Suspense fallback={null}>
           <ProjectsPage />
+        </Suspense>
+      } />
+      <Route path="/projects/:slug" element={
+        <Suspense fallback={null}>
+          <ProjectDetailPage />
         </Suspense>
       } />
       <Route path="/about" element={

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ArrowRight, ArrowUpRight, Asterisk, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { projects } from '@/data/projects'
 import type { ProjectItem } from '@/data/projects'
 
@@ -21,9 +22,7 @@ function ProjectCard({ project, visual, delay }: ProjectCardProps) {
   const hasMultipleImages = images.length > 1
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-  const hasLink = Boolean(project.link)
-  const ctaText = hasLink ? 'View Project' : 'Request Case Study'
-  const ctaHref = hasLink ? project.link : 'mailto:create@casastudioae.com'
+  const projectHref = project.slug ? `/projects/${project.slug}` : '/projects'
 
   const goToNextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % images.length)
@@ -101,14 +100,12 @@ function ProjectCard({ project, visual, delay }: ProjectCardProps) {
 
         <div className="mt-auto pt-4 flex items-center justify-between gap-3 border-t border-stone/30">
           <span className="font-mono text-[11px] text-muted tracking-[0.12em] uppercase">{project.services.slice(0, 2).join(' · ')}</span>
-          <a
-            href={ctaHref}
-            className={`btn !text-[12px] !py-2 !px-4 ${hasLink ? 'btn-secondary' : 'btn-primary'}`}
-            target={hasLink ? '_blank' : undefined}
-            rel={hasLink ? 'noopener noreferrer' : undefined}
+          <Link
+            to={projectHref}
+            className="btn btn-secondary !text-[12px] !py-2 !px-4"
           >
-            {ctaText} <ArrowRight size={12} />
-          </a>
+            View Project <ArrowRight size={12} />
+          </Link>
         </div>
       </div>
     </article>
